@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Technical Documentation Page</title>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand|Raleway&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<nav id="navbar">
+			<header>Python Documentation</header>
+			<ul>
+				<li><a class="nav-link" href="#Introduction">Introduction</a></li>
+ 				<li><a class="nav-link" href="#Pre-requisites">Pre-requisites</a></li>
+				<li><a class="nav-link" href="#Structure_of_Python_Code">Structure of Python Code</a></li>
+				<li><a class="nav-link" href="#Python_Variables">Python Variables</a></li>
+				<li><a class="nav-link" href="#Python_Numbers">Python Numbers</a></li>
+				<li><a class="nav-link" href="#Python_Strings">Python Strings</a></li>
+				<li><a class="nav-link" href="#More...">More...</a></li>
+				<li><a class="nav-link" href="#Reference">Reference</a></li>
+			</ul>
+		</nav>
+		<main id="main-doc">
+
+			<section id="Introduction" class="main-section">
+				<header>Introduction</header>
+				<article>
+					<p id="What_is_Python?" class="header2">What is Python?</p>
+					<p>I am pleased to inform you that it is not the constricting <a href="https://en.wikipedia.org/wiki/Python_(genus)">snake</a> native to the tropics and subtropics of Eastern Hemisphere. But rather, I am discussing a computer programming language. Python is one of the most used programming languages in 2019.</p>
+					<p>Well, here comes the relatively boring part.</p>
+					<p>Python is an all-purpose object-oriented programming language. That basically means Python can be used to do in almost anything. From creating a web app, to designing a mobile app, to maintaining a database, etc.</p>
+					<p id="What_Can_Python_Do?" class="header2">What Can Python Do?</p>
+					<ul>
+						<li>It can be used on a server to create web apps</li>
+						<li>It can be used to handle big data and perform complex mathematics</li>
+						<li>It can be used for rapid prototyping or for production-ready software</li>
+					</ul>
+					<p id="Why_Use_Python?" class="header2">Why Use Python?</p>
+					<ul>
+						<li>Ease of usage - Python has syntax that allows developers to write programs with fewer lines than some other programming languages</li>
+						<li>Relatively easy to learn - Python has a simple syntax like English Language which makes it easy to understand and implement</li>
+						<li>It is object-oriented and functional</li>
+						<li>Portability - It works on different platforms. Any program written in Python can run from mobile phones to supercomputers</li>
+						<li>Python is completely free to use and distribute</li>
+					</ul>
+					<p class="header2">Notable Companies that use Python for real life tasks</p>
+					<ul>
+						<li>Google uses Python in its web search systems</li>
+						<li>YouTube is largely written in Python.</li>
+						<li>Raspberry Pi promotes Python as it is used to program the boards</li>
+						<li>JPMorgan Chase, UBS, and Citadel apply Python to financial market forecasting</li>
+					</ul>
+				</article>	
+			</section>
+
+			<section id="Pre-requisites" class="main-section">
+				<header>Pre-requisites</header>
+				<article>
+					<p id="Python_Install" class="header2">Python Install</p>
+					<p>Many PCs and Macs will have python already installed. To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
+					<p>C:\Users\Your Name>python --version</p>
+					<p>To check if you have python installed on a Linux or Mac, on Linux open the command line, or on Mac open the Terminal and type:</p>
+					<p>python –version</p>
+					<p>If you find that you do not have python installed on your computer/laptop, then you can download it for free from the following <a href="https://www.python.org/">website</a></p>
+					<p id="Python_QuickStart" class="header2">Python QuickStart</p>
+					<p>Python is an interpreted programming language. This means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed. The way to run a python file is like this on the command line:</p>
+					<p>C:\Users\Your Name>python helloworld.py</p>
+					<p>Where "helloworld.py" is the name of your python file. Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+					<p>helloworld.py</p>
+					<code>
+						print("Hello, World!")
+					</code>
+					<p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:</p>
+					<p>C:\Users\Your Name>python helloworld.py</p>
+					<code>Hello, World!</code>
+					<p>Congratulations, you have written and executed your first Python program.</p>
+					<p id="Python_Command_Line" class="header2">Python Command Line</p>
+					<p>To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself.</p>
+					<p>Type the following on the Windows, Mac or Linux command line:</p>
+					<p>C:\Users\Your Name>python</p>
+					<img src="cmd-page1.jpg" alt="screenshot of command line">
+					<p id="Execute_Python_Syntax" class="header2">Execute Python Syntax</p>
+					<p>As we learned in earlier, Python syntax can be executed by writing directly in the Command Line</p>
+					<code>>>>print("Hello, World!")</code>
+					<p>Result</p>
+					<code>Hello, World!</code>
+					<p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line</p>
+					<p>C:\Users\Your Name>python myfile.py</p>
+					<p>Result</p>
+					<code>Hello, World!</code><br><br>
+				</article>	
+			</section>
+
+			<section id="Structure_of_Python_Code" class="main-section">
+				<header>Structure of Python Code</header>
+				<article>
+					<p id="Python_Indentation" class="header2">Python Indentation</p>
+					<p>In Python, indentation is very important as it indicates a block of code. Whereas in other programming languages, the indentation in code is only for readability. Python will give an error if indentation is skipped.</p>
+					<p>Example</p>
+					<code>if 6 > 2:</code><br>
+    				<span><code>print(“Six is greater than two!”)</code></span>
+    				<p>Result</p>
+    				<code>Six is greater than two!</code>
+    				<p id="Comments" class="header2">Comments</p>
+    				<p>Python has commenting capability for the purpose of in-code documentation. Comments start with a #, and Python will render the rest of the line as a comment.</p>
+    				<p>Example</p>
+    				<code>#This is a comment.</code><br>
+    				<code>print("Hello, World!")</code>
+    				<p id="Docstrings" class="header2">Docstrings</p>
+    				<p>Python also has extended documentation capability, called docstrings. Docstrings can be one line, or multiline. Python uses triple quotes at the beginning and end of the docstring. Docstrings are also comments</p>
+    				<code>"""This is a multiline docstring."""</code><br>
+    				<code>print("Hello, World!")</code><br><br>
+				</article>	
+			</section>
+
+			<section id="Python_Variables" class="main-section">
+				<header>Python Variables</header>
+				<article>
+					<p class="header2">Creating Variables</p>
+					<p>Unlike other programming languages, Python has no command for declaring a variable. A variable is created the moment you first assign a value to it. Variables do not need to be declared with any specific type and can even change type after they have been set.</p>
+					<ul>
+						<li>Example 1</li>
+						<code>x = 5</code><br>
+						<code>y = "Bob"</code><br>
+						<code>print(x)</code><br>
+						<code>print(y)</code>
+						<p>Result: <code>5</code><br>
+						<code>Bob</code><br></p>
+						
+						<li>Example 2</li>
+						<code>x = 3 #x is of type int</code><br>
+						<code>x = "Sally" #x is now of type str</code><br>
+						<code>print(x)</code>
+						<p>Result: <code>Sally</code>
+						</p>
+					</ul>
+					<p class="header2">Variable Names</p>
+					<p>A variable can have a short name (like a, b, c) or a more descriptive name (like age, classname, total_volume).</p>
+					<p>Rules for Python variables:</p>
+					<ol>
+						<li>A variable name must start with a letter or the underscore character</li>
+						<li>A variable name cannot start with a number</li>
+						<li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+						<li>Variable names are case-sensitive (bread, Bread and BREAD are three different variables)</li>
+					</ol>
+				</article>
+			</section>
+
+			<section id="Python_Numbers" class="main-section">
+				<header>Python Numbers</header>
+				<article>
+					<p>There are three numeric types in Python – int, float and complex.</p>
+					<ul>
+						<li>Int or integer, is a whole number, positive or negative, without decimals, of unlimited length. e.g. 1,-1000987, etc</li>
+						<li>Float or "floating point number" is a number, positive or negative, containing one or more decimals. Float can also be scientific numbers with an "e" to indicate the power of 10. e.g. 35e3, 12E4 etc</li>
+						<li>Complex: This is  a number written with a "j" as the imaginary part. e.g. x= 3+5j etc</li>
+					</ul>
+					<p>Variables of numeric types are created when you assign a value to them.</p>
+				</article>
+			</section>
+
+			<section id="Python_Strings" class="main-section">
+				<header>Python Strings</header>
+				<article>
+					<p class="header2">String Literals</p>
+					<p>String literals in python are surrounded by either single quotation marks, or double quotation marks. 'hello' is the same as "hello". Strings can be output to screen using the print function. For example: print("hello").</p>
+					<p>Like many other popular programming languages, strings in Python are arrays of bytes representing Unicode characters. However, Python does not have a character data type, a single character is simply a string with a length of 1. Square brackets can be used to access elements of the string.</p>
+					<ul>
+						<li>Example 1</li>
+						<p>This example prints out the character at position 1.</p>
+						<code>a = "hello"</code><br>
+						<code>print(a[1])</code><br>
+						<p>Result: <code>e</code> {the first position is 0, where h is positioned}</p>
+						<li>Example 2</li>
+						<p>This example prints out the characters for position 2 to position 5, but does not include the character at position 5.</p>
+						<code>a = "hello!"</code><br>
+						<code>print(a[2:5])</code><br>
+						<p>Result: <code>llo</code></p>	
+					</ul>
+					<p>Variables of numeric types are created when you assign a value to them.</p>
+				</article>
+			</section>
+
+			<section id="More..." class="main-section">
+				<header>More...</header>
+				<p>For more, check out the materials in the Reference section.</p>
+			</section>
+			
+
+			<section id="Reference" class="main-section">
+				<header>Reference</header>
+				<p>Heavily copied from</p>
+				<article>
+					<ul>
+						<li><a href="https://www.w3schools.com/python/default.asp" target="_blank">W3Schools</a></li>
+						<li><cite>Learning Python, 5th Edition</cite> written by Mark Lutz and published by O’Reilly in 2013. </li>
+					</ul>
+				</article>
+			</section>
+			
+		</main>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>

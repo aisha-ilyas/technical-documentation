@@ -1,0 +1,115 @@
+* {
+	padding: 0;
+}
+
+body, 
+html {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	text-align: justify;
+	display: flex;
+	line-height: 1.4;
+}
+
+#navbar {
+	position: fixed;
+	font-size: 20px;
+	left: 0;
+	top: 0;
+	width: 31%;
+	height: 100%;
+	border: 1px solid grey;
+	border-top: none;
+	border-right: 2px solid grey;
+}
+
+#navbar header {
+	font-size: 1.65rem;
+	padding: 0px 5px;
+	text-align: center;
+	z-index: 1;
+}
+
+#navbar ul {
+	overflow: auto;
+	top: 10px;
+	height: 90%;
+	position: relative;
+	list-style: none;
+	text-align: left;
+	cursor: pointer;
+}
+
+#navbar li {
+	margin: 0;
+	padding: 5px 5px 5px 25px;
+	border-top: 1px solid black;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+ul,
+ol {
+	list-style-position: inside;
+	text-align: left;
+
+}
+
+#main-doc {
+	position: absolute;
+	left: 31%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+section li {
+	margin: 0 0 0 10px;
+}
+
+header {
+	font-size: 28px;
+}
+
+.header2 {
+	font-size: 22px;
+}
+
+img {
+	display: block;
+	width: 90%;
+	height: 50%;
+	margin: 0 auto;
+}
+
+span {
+	padding-left: 20px;
+}
+
+
+@media(max-width: 800px) {
+	#navbar {
+		top: 0;
+		position: fixed;
+		width: 100%;
+		height: 250px;
+		z-index: 1;
+		background-color: white;
+		border-right: 2px solid grey;
+		border-bottom: 2px solid grey;
+	}
+
+	#navbar ul {
+		height: 160px;
+	}
+
+	#main-doc {
+		position: relative;
+		top: 265px;
+		left: 0;
+	}
+		
+} 
